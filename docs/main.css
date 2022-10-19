@@ -51,12 +51,6 @@ audio:not([controls]) {
 a {
     background-color: transparent
 }
-a:link, a:visited, a:active {
-    color: #B0B0B0;
-}
-a:hover {
-    color: white;
-}
 a:active, a:hover {
     outline: 0
 }
@@ -317,13 +311,16 @@ button, input, select, textarea {
 }
 
 a {
-    color: #001aff;
+    color: #B0B0B0;
     text-decoration: none
 }
 
-a:focus, a:hover {
-    color: #0012b3;
+a:link, a:focus {
+    color: #B0B0B0;
     text-decoration: underline
+}
+a:hover {
+    color:white;
 }
 
 a:focus {
@@ -5328,15 +5325,6 @@ button, input, select, textarea {
     line-height: inherit
 }
 
-a {
-    color: #001aff;
-    text-decoration: none
-}
-
-a:focus, a:hover {
-    color: #0012b3;
-    text-decoration: underline
-}
 
 a:focus {
     outline: 5px auto -webkit-focus-ring-color;
