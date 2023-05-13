@@ -1,12 +1,7 @@
-# Cleanfolio Minimal
+# Portfolio - V Collins-Laine
 
-A clean and simple portfolio template built with plain HTML, CSS and JavaScript.
+Hi! I'm V. I make games. This is my portfolio! It was adapted from a [template](https://github.com/rajshekhar26/cleanfolio-minimal) by Raj Shekjar.
 
-## Preview
-
-[![imgur](https://i.imgur.com/5z7cvMz.gif)](https://rajshekhar26.github.io/cleanfolio-minimal)
-
-[See Live](https://rajshekhar26.github.io/cleanfolio-minimal)
 
 ## License
 
