@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto-Mono"
+          rel="stylesheet"
+  />
+  <script
+          src="https://kit.fontawesome.com/fa62c117c7.js"
+          crossorigin="anonymous"
+  ></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Saleblazers</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="light" id="top">
+<div class = "header-wrapper">
+  <header class="header center">
+    <h3>
+      <a href="/index.html" class="link"
+      ><img src = "/resources/Portrait.png" class = "head__icon"></a
+      >
+    </h3>
+
+    <nav class="nav center">
+      <ul class="nav__list center">
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#top">About</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#fake-projects">Projects</a>
+        </li>
+        <li class="nav__list-item">
+          <a class="link link--nav" href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <button type="button" aria-label="toggle theme" class="btn btn--icon">
+        <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+      </button>
+
+      <button
+              type="button"
+              aria-label="toggle navigation"
+              class="btn btn--icon nav__hamburger"
+      >
+        <i aria-hidden="true" class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+</div>
+<main>
+  <!-- About -->
+  <div class="about center">
+    <h1>Hi! I'm <span class="about__name">V Collins-Laine.</span></h1>
+    <h2 class="about__role center">I Make Games.</h2>
+    <p class="about__desc">
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Hi! I'm V. I'm starting my final year of studying game design at the University of Southern California. I'm multiclassing in design and engineering.
+      <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;I'm currently interning as a tech designer at Airstrafe Interactive. I was also the lead engineer on the USC Advanced Games Project Bloompunk. The summer before, I co-founded and was the sole engineer for Blue Monarch Games, where I made an adventure game about old gods and delivering mail called Keep Me Posted.
+      <br>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Although I've developed games across a wide range of genres, I'm particularly passionate about fighting and card games. I'm interested in working in areas of systems, combat, and tech design, as well as tools development.
+    </p>
+
+    <div class="about__contact center" id="fake-projects">
+      <a href="/resources/v_collins-laine_resume.pdf" target="_blank">
+        <span class="btn btn--outline">Resume</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <h2 class="section__title">Projects</h2>
+
+    <div class="projects__grid">
+      <div class="project">
+        <img src = "resources/SaleblazersCover.png" class="project__img">
+        <div class="project__hover">
+          <div class = "hover-inner">
+            <h2>Saleblazers</h2><br>
+            <p>Airstrafe Interactive</p><br>
+            <p>Tech Design Intern</p>
+          </div>
+          <a href="/Saleblazers.html" class = "hover-inner">
+            <span class="btn btn--outline">Learn More</span> </a>
+        </div>
+      </div>
+      <div class="project">
+        <img src = "resources/BloompunkCover.png" class="project__img">
+        <div class="project__hover">
+          <div class = "hover-inner">
+            <h2>Bloompunk</h2><br>
+            <p>USC Advanced Games Project</p><br>
+            <p>Lead Engineer</p>
+          </div>
+          <a href="/resources/v_collins-laine_resume.pdf" class = "hover-inner">
+            <span class="btn btn--outline">Learn More</span> </a>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src = "resources/KeepMePostedCover.png" class="project__img">
+        <div class="project__hover">
+          <div class = "hover-inner">
+            <h2>Keep Me Posted</h2><br>
+            <p>Blue Monarch Games</p><br>
+            <p>Co-Founder/Engineer</p>
+          </div>
+          <a href="/resources/v_collins-laine_resume.pdf" class="hover-inner">
+            <span class="btn btn--outline">Learn More</span> </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+
+  <!-- Contact -->
+  <section class="section contact center" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <div>
+      <a href="https://linkedin.com/in/v-collins-laine" target="_blank"
+         aria-label="linkedin"
+         class="link link--icon">
+        <i aria-hidden="true" class="fab fa-linkedin  "></i>
+      </a>
+      <a href="mailto:vcollinslaine@gmail.com" target="_blank">
+        <span class="link link--nav" style="margin:10px">vcollinslaine@gmail.com</span>
+      </a>
+      <a href="https://twitter.com/hopefvlromantic" target="_blank"
+         aria-label="twitter"
+         class="link link--icon">
+        <i aria-hidden="true" class="fab fa-twitter  "></i>
+      </a>
+      <p style="text-align: center"> Los Angeles (for now)</p>
+    </div>
+  </section>
+  <section class="footer">
+    Adapted from a <a href="https://github.com/rajshekhar26/cleanfolio-minimal" target="_blank"><span class="link link--nav">template</span>
+  </a> by Raj Shekhar
+  </section>
+</main>
+
+<div class="scroll-container">
+  <div class="scroll-top">
+    <a aria-label="Scroll up" href="#top">
+      <i aria-hidden="true" class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
