@@ -111,7 +111,8 @@ button {
   position: relative;
 }
 
-.link:hover {
+.link:hover,
+.link:focus {
   color: var(--clr-primary);
 }
 
@@ -126,15 +127,17 @@ button {
   transition: width 0.2s ease-in;
 }
 
-.link:hover::before,
-.link:focus::before {
+.link:hover::before {
   width: 100%;
 }
-
 .link--nav {
   color: var(--clr-fg-alt);
   text-transform: lowercase;
   font-weight: 800;
+}
+.link--nav.focus,
+.link--nav.hover {
+  color: var(--clr-primary);
 }
 .link--inline {
   color: var(--clr-fg-alt);
@@ -144,7 +147,6 @@ button {
 .link--icon {
   color: var(--clr-fg);
   font-size: 1.5rem;
-
 }
 .contact .link--icon:hover::before {
   width: 75%;
@@ -166,7 +168,7 @@ button {
   z-index: 1;
 }
 
-.btn--outline:focus,
+.btn--outline:focus-within,
 .btn--outline:hover {
   color: var(--clr-bg);
 }
@@ -184,7 +186,7 @@ button {
 }
 
 .btn--outline:hover::before,
-.btn--outline:focus::before {
+.btn--outline:focus-within::before {
   right: 0;
 }
 
@@ -366,7 +368,8 @@ main {
   margin-left:25%;
   margin-right:25%;
 }
-.project__hover:hover {
+.project__hover:hover,
+.project__hover:focus-within{
   opacity:1;
   background-color:var(--clr-bg-hover);
 }
