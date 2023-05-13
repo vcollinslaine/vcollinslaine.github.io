@@ -269,7 +269,10 @@ main {
   margin-right: 1.5em;
   display: flex;
 }
-
+.nav-list-no-burger {
+  margin-right: 1.5em;
+  display: flex;
+}
 .nav__list-item {
   margin-left: 1.5em;
 }
@@ -434,6 +437,7 @@ main {
 
 .footer {
   position:relative;
+  font-size:.8rem;
   padding: 3em 0;
   margin-top: 4em;
   text-align: center;
@@ -478,6 +482,7 @@ main {
     overflow: hidden;
     transition: width 0.2s ease-in-out;
   }
+
 
   .display-nav-list {
     width: 100%;
