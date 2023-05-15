@@ -134,6 +134,7 @@ button {
   color: var(--clr-fg-alt);
   text-transform: lowercase;
   font-weight: 800;
+  text-decoration: solid underline var(--clr-fg-alt) 1.5px;
 }
 .link--nav.focus,
 .link--nav.hover {
@@ -409,6 +410,9 @@ main {
   text-align: center;
   margin-bottom:1em;
 }
+.details b {
+  color: var(--clr-fg-alt)
+}
 .details li {
   list-style: square;
 }
@@ -434,6 +438,7 @@ main {
 }
 .details--visual--captioned p {
   text-align: center;
+  margin-top: 0.25rem;
   font-size: 0.85rem;
 }
 .details--visual {
