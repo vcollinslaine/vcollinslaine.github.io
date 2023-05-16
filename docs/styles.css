@@ -136,9 +136,10 @@ button {
   font-weight: 800;
   text-decoration: solid underline var(--clr-fg-alt) 1.5px;
 }
-.link--nav.focus,
-.link--nav.hover {
+.link--nav:focus,
+.link--nav:hover {
   color: var(--clr-primary);
+  text-decoration: solid underline var(--clr-primary) 1.5px;
 }
 .link--inline {
   color: var(--clr-fg-alt);
@@ -415,6 +416,7 @@ main {
 }
 .details li {
   list-style: square;
+  margin-bottom:0.3rem;
 }
 .details--row {
   max-width: 100%;
@@ -509,13 +511,17 @@ main {
     position: absolute;
     right: 0;
     left: 0;
-    top: 5em;
+    top: 6em;
     background-color: var(--clr-bg-blur);
     width: 0;
     overflow: hidden;
     transition: width 0.2s ease-in-out;
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
   }
-
+.nav__list li {
+  background-color: transparent;
+}
 
   .display-nav-list {
     width: 100%;
