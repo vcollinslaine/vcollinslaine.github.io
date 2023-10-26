@@ -44,6 +44,7 @@
     <h1><span class="about__name">Saleblazers</span></h1>
     <h2 class="about__role center">Airstrafe Interactive</h2>
     <h3 class="about__role center">Tech Design Intern</h3>
+    <p class="about__role center">Unity Engine | 05/23 - 08/23 | Team Size: ~20</p>
     <div class="about__contact center" id="projects">
       <a href="https://store.steampowered.com/app/1419850/Saleblazers/" target="_blank"
          aria-label="steam"
@@ -59,12 +60,14 @@
     <div class="details">
       <div class="details--row">
         <div class="details--text">
-          <h3>About</h3>
-          <p>&emsp;&emsp;&emsp;&emsp;Saleblazers is an <b>open-world, multiplayer</b> shopkeeping game.</p>
-          <p>&emsp;&emsp;&emsp;&emsp;I interned at Airstrafe for 11 weeks, both <br><b>in-person and remote.</b></p>
-          <p>&emsp;&emsp;&emsp;&emsp;As a technical game design intern, I <b>ideated, prototyped, and implemented</b> new features.</p>
-          <p>&emsp;&emsp;&emsp;&emsp;I also <b>created tools</b> and <b>improved pipelines</b> to speed up other designers' iteration time.</p>
-          <p>&emsp;&emsp;&emsp;&emsp;Saleblazers is currently available in Early Access on Steam.</p>
+          <h3>Overview</h3>
+          <ul>
+            <li>Overhauled attribute system to improve <b>scalability and iteration time</b>, eliminating redundant work </li>
+            <li>Implemented flexible <b>weather system</b> with zones in an open world</li>
+            <li>Created mockups of UI elements and implemented them in the <b>Unity UI</b> system</li>
+            <li>Added npcs and <b>wrote dialogue</b> to improve <b>new player experience</b></li>
+            <li>Fixed bugs and kept code quality high in a <b>complex, networked codebase</b>  </li>
+          </ul>
         </div>
         <div class="details--visual">
           <iframe src="https://www.youtube.com/embed/VkKcCM7df00?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
@@ -74,37 +77,37 @@
       <div class="details--row--inverted">
         <div class="details--visual--captioned">
           <div class="details--visual">
-            <img src="resources/SaleblazersPlaceholder2.jpg">
+            <img src="resources/SaleblazersTooltip.png">
           </div>
-          <p>Placeholder image for confidentiality</p>
+          <p>Items have random attributes, with higher rarities being more powerful</p>
         </div>
         <div class="details--text">
-          <h3>Design</h3>
-          <ul>
-            <li>Wrote <b>design documents</b> for new systems, quests, and encounters</li>
-            <li>Participated in larger <b>player experience and progression</b> playtests and design decisions</li>
-            <li>Created <b>visual mockups</b> of UI elements and implemented them in the <b>Unity UI</b> system</li>
-            <li>Added npcs and <b>wrote dialogue</b> to improve <b>new player experience</b></li>
-            <li>Made <b>pricing and economy</b> decisions for <b>balancing</b> items and weapons</li>
-          </ul>
+          <h3>Attribute Overhauls</h3>
+            <p>
+              &emsp;&emsp;&emsp;&emsp;One of my tasks was to add a system for random attributes on clothing and items that scales with item rarity.<br>
+              &emsp;&emsp;&emsp;&emsp;During this process, I <b>identified multiple pain points</b> for other designers.<br>
+              &emsp;&emsp;&emsp;&emsp;To improve the iteration process, I created standardized <b>rarity scaling tables</b> so that values didn't have to be edited on every item, and <b>simplified how data was stored</b> to reduce redundant work.<br>
+              &emsp;&emsp;&emsp;&emsp;I also <b>added functionality</b> for new attributes (e.g. + % max health).<br>
+            </p>
         </div>
       </div>
       <div class="details--row">
         <div class="details--text">
-          <h3>Implementation & Tools</h3>
-          <ul>
-            <li>Overhauled attribute system to improve <b>scalability and iteration time</b></li>
-            <li>Modified how data was stored and serialized to <b>increase data entry efficiency</b></li>
-            <li>Implemented flexible <b>weather system</b> with zones in the open world</li>
-            <li><b>Prototyped</b> new features and systems for designers to test with and iterate on</li>
-            <li>Integrated changes into a pre-existing, complex, <b>networked</b> codebase</li>
-          </ul>
+          <h3>Weather Zones</h3>
+          <p>
+            &emsp;&emsp;&emsp;&emsp;I also <b>overhauled</b> the game's weather system.<br>
+            &emsp;&emsp;&emsp;&emsp;My new system allowed for weather to inflict <b>status effects</b> like thirst, radiation, or cold.<br>
+            &emsp;&emsp;&emsp;&emsp;It could also add <b>particle systems</b> like snowstorms or <b>post-processing effects</b> like toxic fog to the local player.<br>
+            &emsp;&emsp;&emsp;&emsp;Because <i>Saleblazers</i> is <b>multiplayer and open-world</b>, zones had to properly handle their chunks loading and unloading,
+            as well as have a <b>priority system</b> to handle overlap.<br>
+            &emsp;&emsp;&emsp;&emsp;I also created a <b>Status UI</b> to show both weather statuses and temporary effects like fire damage.
+          </p>
         </div>
         <div class="details--visual--captioned">
           <div class="details--visual">
             <img src="resources/SaleblazersWeather.gif">
           </div>
-          <p>Entering a weather zone adds a post-processing effect and an "irradiated" debuff shown in the top left of the UI</p>
+          <p>Entering a weather zone adds a post-processing effect and an "irradiated" debuff shown in the top left of the UI - footage is from early access</p>
         </div>
       </div>
     </div>

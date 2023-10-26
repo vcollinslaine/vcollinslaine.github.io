@@ -304,7 +304,10 @@ main {
   max-width: 900px;
 }
 
-.about__desc,
+.about__desc {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 .about__contact {
   margin-top: 2.4em;
 }

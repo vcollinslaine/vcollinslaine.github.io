@@ -46,14 +46,12 @@
     <h1><span class="about__name">Keep Me Posted</span></h1>
     <h2 class="about__role center">Blue Monarch Games</h2>
     <h3 class="about__role center">Co-Founder, Solo Engineer</h3>
+    <p class="about__role center">Unity Engine | 06/22 - 08/22 | Team Size: 6</p>
     <div class="about__contact center" id="projects">
       <a href="https://store.steampowered.com/app/2164970/Keep_Me_Posted/" target="_blank"
          aria-label="steam"
          class="link link--icon">
         <i aria-hidden="true" class="fab fa-steam "></i>
-      </a>
-      <a href="https://saleblazers.com" target="_blank" class="btn btn--outline">
-        official website
       </a>
     </div>
   </div>
@@ -61,12 +59,14 @@
     <div class="details">
       <div class="details--row">
         <div class="details--text">
-          <h3>About</h3>
-          <p>&emsp;&emsp;&emsp;&emsp;Blue Monarch Games was the summer project of <b>me and 5 of my friends.</b></p>
-          <p>&emsp;&emsp;&emsp;&emsp;We holed up at my childhood home in New Hampshire for <b>two months</b> with questionable internet and set out to make a game.</p>
-          <p>&emsp;&emsp;&emsp;&emsp;Over those <b>8 weeks</b>, we made <i>Keep Me Posted</i>, a game about old gods, delivering mail, and drifting away from a friend.</p>
-          <p>&emsp;&emsp;&emsp;&emsp;I was the <b>only engineer</b>. In addition to game code, I also coordinated my team's usage of <b>git.</b></p>
-          <p>&emsp;&emsp;&emsp;&emsp;<i>Keep Me Posted</i> was <b>successfully Kickstarted</b> and launched in October 2022.</p>
+          <h3>Overview</h3>
+          <ul>
+            <li>Singlehandedly programmed player controller, <b>enemy AI</b>, and quest progression</li>
+            <li>Handled <b>UI implementation</b> and functionality, including <b>drag-and drop</b> inventory management</li>
+            <li>Managed my team's usage of <b>Git</b> on a local server</li>
+            <li>Coordinated <b>Kickstarter</b> planning, reward coordination, and updates</li>
+            <li>Contributed to early ideation and <b>combat design</b> decisions</li>
+          </ul>
         </div>
         <div class="details--visual">
           <iframe src="https://www.youtube.com/embed/mVEt0r10QMI?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
@@ -81,26 +81,25 @@
           <p>A screenshot showing the day and task UI</p>
         </div>
         <div class="details--text">
-          <h3>Engineering</h3>
-          <ul>
-            <li>Created custom ScriptableObject-based <b>state machine</b> for player and enemy logic</li>
-            <li>Implemented quest <b>progression systems</b> with <b>save slots</b></li>
-            <li>Managed team's <b>git usage</b>, including recovering from a server crash</li>
-            <li>Coded state-based <b>enemy AI</b> using <b>A*</b> and <b>navmesh</b> pathfinding for movement</li>
-            <li>Handled <b>runtime chunk loading</b> and unloading</li>
-            <li>Coordinated <b>build pipelines</b> and Steam uploads</li>
-          </ul>
+          <h3>Player Controller and Enemy AI</h3>
+          <p>
+            &emsp;&emsp;&emsp;&emsp;The player and enemy units both run using a custom Scriptable-Object based <b>hierarchical state machine</b> framework that I developed.<br>
+            &emsp;&emsp;&emsp;&emsp;This allows for easy implementation of complex behaviour like follow-up attack sequences to improve game feel.<br>
+            &emsp;&emsp;&emsp;&emsp;In addition, this setup enables designers to <b>easily iterate</b> on numbers during balance passes.<br>
+            &emsp;&emsp;&emsp;&emsp;I also implemented <b>A* pathfinding</b> by hand, although I ended up pivoting to using <b>Unity NavMeshes</b> for performance reasons.
+          </p>
         </div>
       </div>
       <div class="details--row">
         <div class="details--text">
-          <h3>Other Contributions</h3>
+          <h3>Other Game Systems</h3>
           <ul>
-            <li>Assisted in overarching <b>experience design</b> and <b>ideation</b> conversations</li>
-            <li><b>Prototyped</b> systems to test and <b>iterate</b> on design decisions</li>
-            <li><b>Collaborated</b> on <b>combat design</b> decisions for player attacks and enemy behaviour</li>
-            <li>Coordinated <b>Kickstarter</b> rewards and updates</li>
-            <li>Handled communication with <b>Indiecade</b> and <b>USC Games Expo</b></li>
+            <p>
+              &emsp;&emsp;&emsp;&emsp;<i>Keep Me Posted</i> uses a custom <b>chunk-loading</b> system where only the zones near the player are active to <b>improve performance.</b><br>
+              &emsp;&emsp;&emsp;&emsp;I created a custom <b>task and interaction system</b> to handle checking off delivered mail and tracking narrative progress.<br>
+              &emsp;&emsp;&emsp;&emsp;As the only programmer, I was in charge of all of the <b>UI implementation</b>. This included making sure menus were controller-navigable and creating a <b>drag-and-drop inventory</b> for picking up mail.<br>
+              &emsp;&emsp;&emsp;&emsp;
+            </p>
           </ul>
         </div>
         <div class="details--visual--captioned">
