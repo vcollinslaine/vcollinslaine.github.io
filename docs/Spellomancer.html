@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto-Mono"
+          rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/12252ffce3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Spellomancer | V Collins-Laine</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="light" id="top">
+<div class = "header-wrapper">
+  <header class="header center">
+    <h3>
+      <a href="./" class="link"> <img src = "./resources/Portrait.png" class = "head__icon"> </a>
+    </h3>
+
+    <nav class="nav center">
+    <ul class="nav-list-no-burger center">
+      <li class="nav__list-item">
+        <a class="link link--nav" href="./">home</a>
+      </li>
+    </ul>
+
+    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+      <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+    </button>
+  </nav>
+  </header>
+</div>
+<main>
+  <!-- About -->
+  <div class="about center">
+    <h1><span class="about__name">Spellomancer</span></h1>
+    <h2 class="about__role center">Hidden Variable Studios</h2>
+    <h3 class="about__role center">Junior Engineer</h3>
+    <p class="about__role center">Godot Engine, C++ | 10/24 - Present | Team Size: ~15</p>
+    <div class="about__contact center" id="projects">
+      <a href="https://store.steampowered.com/app/2933760/Spellomancer/" target="_blank"
+         aria-label="steam"
+         class="link link--icon">
+        <i aria-hidden="true" class="fab fa-steam"></i>
+      </a>
+      <a href="https://spellomancer.com/" target="_blank" class="btn btn--outline">
+        website
+      </a>
+    </div>
+  </div>
+  <!-- Project Details-->
+    <div class="details">
+      <div class="details--row">
+        <div class="details--text">
+          <h3>Overview</h3>
+          <ul>
+            <li>Implemented a <b>replay system</b> that saves inputs and gamestate to a file to be resimulated</li>
+            <li>Improved the <b>in-game HUD</b> and took it through multiple rounds of polish</li>
+            <li>Created the <a href="https://spellomancer.com" target="_blank" class="link link--inline">Spellomancer website</a> from scratch in HTML and CSS</li>
+            <li>Modified gameplay features in a deterministic <b>rollback networked</b> simulation</li>
+            <li>Created and improved <b>editor tools</b> for Godot Engine</li>
+          </ul>
+        </div>
+        <div class="details--visual">
+          <iframe src="https://www.youtube.com/embed/v8GbvXpbCn0?si=A4Z69tR7umvXFuqV?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+                class = "video--embed" allow="autoplay; encrypted-media"  title="Saleblazers - Official Cinematic Reveal Trailer"></iframe>
+        </div>
+      </div>
+      <div class="details--row--inverted">
+        <div class="details--visual--captioned">
+          <div class="details--visual">
+            <img src="resources/SpellomancerSitePreview.png">
+          </div>
+          <p>Replays are hard to represent visually, so instead, here's the website I made for Spellomancer! It's meant to look like a gallery wall.</p>
+        </div>
+        <div class="details--text">
+          <h3>Replay System</h3>
+            <p>
+              &emsp;&emsp;&emsp;&emsp;As Spellomancer got more and more complex, we realized that we needed a <b>replay system</b> to make debugging desyncs and crashes easier. <br>
+              &emsp;&emsp;&emsp;&emsp;Replay files store basic data like the game mode, as well as each frame's <b>input map and checksum,</b> and optionally the entire state of the game.<br>
+              &emsp;&emsp;&emsp;&emsp;The game state for each frame is <b>too large to be loaded into memory</b> when the file is read, so a second file is written and each state is read only as needed.<br>
+              &emsp;&emsp;&emsp;&emsp;They also <b>integrate with the game's rollback netcode</b>: predicted inputs are written to the file, and then overwritten if new input data is recieved from the network.<br>
+            </p>
+        </div>
+      </div>
+      <div class="details--row">
+        <div class="details--text">
+          <h3>HUD Overhaul</h3>
+            <p>
+              &emsp;&emsp;&emsp;&emsp;I was in charge of taking Spellomancer's user interface from early greybox to a <b>polished, pitch-ready</b> state.<br>
+              &emsp;&emsp;&emsp;&emsp;I worked closely with designers and artists to allow for <b>rapid iteration</b> and feedback.<br>
+              &emsp;&emsp;&emsp;&emsp;One of the more complex pieces of this task was creating a <b>custom sprite animation framework</b> that was compatible with our rollback netcode.<br>
+              &emsp;&emsp;&emsp;&emsp;In addition, I reworked an <b>event notification system</b> to allow it to subscribe to our in-game spawners and notify players when high-value spawn events were happening.<br>
+            </p>
+        </div>
+        <div class="details--visual--captioned">
+          <div class="details--visual">
+            <video src="resources/SpellomancerHUD.mp4" autoplay muted loop>
+          </div>
+          <p>Clip showing spawner event, spelled word animation, and score increasing </p>
+        </div>
+      </div>
+    </div>
+  <!-- Contact -->
+  <section class="section contact center" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <div>
+      <a href="https://linkedin.com/in/v-collins-laine" target="_blank"
+         aria-label="linkedin"
+         class="link link--icon">
+        <i aria-hidden="true" class="fab fa-linkedin  "></i>
+      </a>
+      <a href="mailto:vcollinslaine@gmail.com" class="link link--nav" style="margin:10px" target="_blank">
+        vcollinslaine@gmail.com</a>
+      <p style="text-align: center">Los Angeles (for now)</p>
+    </div>
+  </section>
+  <section class="footer">
+    <p>Adapted from a <a href="https://github.com/rajshekhar26/cleanfolio-minimal" target="_blank" class="link link--nav">template</a> by Raj Shekhar</p>
+    <p>Profile picture by <a href="https://www.artstation.com/shirochi" target="_blank" class="link link--nav">Sherry He</a></p>
+  </section>
+</main>
+
+<div class="scroll-container">
+  <div class="scroll-top">
+    <a aria-label="Scroll up" href="#top">
+      <i aria-hidden="true" class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

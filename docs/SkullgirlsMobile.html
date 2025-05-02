@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          href="https://fonts.googleapis.com/css2?family=Roboto-Mono"
+          rel="stylesheet"
+  />
+  <script src="https://kit.fontawesome.com/12252ffce3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <title>Skullgirls Mobile | V Collins-Laine</title>
+  <link rel="icon" href="favicon.ico">
+</head>
+<body class="light" id="top">
+<div class = "header-wrapper">
+  <header class="header center">
+    <h3>
+      <a href="./" class="link"> <img src = "./resources/Portrait.png" class = "head__icon"> </a>
+    </h3>
+
+    <nav class="nav center">
+    <ul class="nav-list-no-burger center">
+      <li class="nav__list-item">
+        <a class="link link--nav" href="./">home</a>
+      </li>
+    </ul>
+
+    <button type="button" aria-label="toggle theme" class="btn btn--icon">
+      <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+    </button>
+  </nav>
+  </header>
+</div>
+<main>
+  <!-- About -->
+  <div class="about center">
+    <h1><span class="about__name">Skullgirls Mobile</span></h1>
+    <h2 class="about__role center">Hidden Variable Studios</h2>
+    <h3 class="about__role center">Engineering Intern</h3>
+    <p class="about__role center">Unity Engine | 05/24 - 10/24 | Team Size: ~15</p>
+    <div class="about__contact center" id="projects">
+      <a href="https://play.google.com/store/apps/details?id=com.autumn.skullgirls&hl=en_US" target="_blank"
+         aria-label="steam"
+         class="link link--icon">
+        <i aria-hidden="true" class="fa-brands fa-google-play "></i>
+      </a>
+      <a href="https://skullgirlsmobile.com/" target="_blank" class="btn btn--outline">
+        website
+      </a>
+    </div>
+  </div>
+  <!-- Project Details-->
+    <div class="details">
+      <div class="details--row">
+        <div class="details--text">
+          <h3>Overview</h3>
+          <ul>
+            <li>Implemented and iterated on an overhaul of the inventory screen <b>user interface</b></li>
+            <li><b>Created tools</b> and improved workflows for designers and other team members</li>
+            <li>Regularly dentified and <b>fixed critical bugs</b></li>
+            <li>Added new <b>gameplay features</b> to improve user experiences</li>
+              <li>Adapted to a complex, networked codebase serving <b>millions of players</b></li>
+          </ul>
+        </div>
+        <div class="details--visual">
+          <iframe src="https://www.youtube.com/embed/dRRYZF40frk?si=cG51NzXq_c3phZjY?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+                class = "video--embed" allow="autoplay; encrypted-media"  title="Skullgirls Mobile"></iframe>
+        </div>
+      </div>
+      <div class="details--row--inverted">
+        <div class="details--visual--captioned">
+          <div class="details--visual">
+            <img src="resources/SkullgirlsCollection.gif">
+          </div>
+          <p>Collection screen before and after (images courtesy of Deny17S on <a href="https://www.youtube.com/@Deny17S" class="link link--inline">YouTube</a>)</p>
+        </div>
+        <div class="details--text">
+          <h3>Collection Screen Redesign</h3>
+            <p>
+              &emsp;&emsp;&emsp;&emsp;Leading up to releasing Guest Stars (a new collectible character type), we had to <b>redesign the collection screen</b> to make room.<br>
+              &emsp;&emsp;&emsp;&emsp;I worked closely with our lead designer and artist to <b>maintain and improve functionality.</b><br>
+              &emsp;&emsp;&emsp;&emsp;We shifted to an icon-focused design, and moved the title and capacity of each screen into a new pop-out area in the top right.<br>
+              &emsp;&emsp;&emsp;&emsp;To make sure all cards were still viewable, I implemented a system to resize the scroll container so that you could "overscroll" such that the last cards in your collection were still accessible.<br>
+            </p>
+        </div>
+      </div>
+      <div class="details--row">
+        <div class="details--text">
+          <h3>Other Improvements</h3>
+          <p>
+            &emsp;&emsp;&emsp;&emsp;I also made a number of other <b>improvements and bugfixes</b> during my time on the project.<br>
+            &emsp;&emsp;&emsp;&emsp;We found that the game's autoplay feature wasn't being used much, so I implemented a system to be able to <b>speed up the game</b> during autoplay, allowing players to quickly breeze through easier fights.<br>
+            &emsp;&emsp;&emsp;&emsp;As part of an economy overhaul, I <b>reworked our advertising reward system</b>, changing it from a cooldown to a set number of ads per day with increasing rewards.<br>
+            &emsp;&emsp;&emsp;&emsp;To <b>improve the new user experience,</b> I also added new tutorialization popups, fixed bugs that broke FTUE flow, and modified early-game progression timings.<br>
+          </p>
+        </div>
+        <div class="details--visual--captioned">
+          <div class="details--visual">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/in8X8JvDLdg?si=Ut472qPctpD_8-89&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
+            class = "video--embed" allow="autoplay; encrypted-media"  title="Skullgirls Mobile Autoplay"></iframe>
+          </div>
+          <p>Entering a weather zone adds a post-processing effect and an "irradiated" debuff shown in the top left of the UI - footage is from early access</p>
+        </div>
+      </div>
+    </div>
+  <!-- Contact -->
+  <section class="section contact center" id="contact">
+    <h2 class="section__title">Contact</h2>
+    <div>
+      <a href="https://linkedin.com/in/v-collins-laine" target="_blank"
+         aria-label="linkedin"
+         class="link link--icon">
+        <i aria-hidden="true" class="fab fa-linkedin  "></i>
+      </a>
+      <a href="mailto:vcollinslaine@gmail.com" class="link link--nav" style="margin:10px" target="_blank">
+        vcollinslaine@gmail.com</a>
+      <p style="text-align: center">Los Angeles (for now)</p>
+    </div>
+  </section>
+  <section class="footer">
+    <p>Adapted from a <a href="https://github.com/rajshekhar26/cleanfolio-minimal" target="_blank" class="link link--nav">template</a> by Raj Shekhar</p>
+    <p>Profile picture by <a href="https://www.artstation.com/shirochi" target="_blank" class="link link--nav">Sherry He</a></p>
+  </section>
+</main>
+
+<div class="scroll-container">
+  <div class="scroll-top">
+    <a aria-label="Scroll up" href="#top">
+      <i aria-hidden="true" class="fas fa-arrow-up"></i>
+    </a>
+  </div>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
