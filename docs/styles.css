@@ -148,6 +148,7 @@ button {
 .link--icon {
   color: var(--clr-fg);
   font-size: 1.5rem;
+
 }
 .contact .link--icon:hover::before {
   width: 75%;
@@ -311,12 +312,9 @@ main {
   margin-top: 2.4em;
 }
 
-.about .link--icon {
-  margin-right: 0.8em;
-}
-
 .about .btn--outline {
-  margin-right: 1em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
 }
 .about h1 {
   text-align: center;
